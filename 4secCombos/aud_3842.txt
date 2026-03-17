@@ -1,0 +1,4 @@
+Asteburu honetan mendira joateko asmoa daukat eguraldia lagun badugu.
+Por más que revisé los cálculos, no encontré ningún fallo evidente.
+Aunque la explicación fue extensa, resultó clara y bien estructura.
+Lanean proiektu berri bat hasi dugu eta erronka handia izango da
