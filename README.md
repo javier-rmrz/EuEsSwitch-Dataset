@@ -1,95 +1,95 @@
 # EuEsSwitch-Dataset
-**Corpus de voz con code-switching Español–Euskera**
+**Spanish–Basque Code-Switching Speech Corpus**
 
-## Descripción
-EuEsSwitch-Dataset es un dataset de audio sintético diseñado para investigación en **reconocimiento automático del habla (ASR)** con **cambio de código (code-switching)** entre **español (castellano)** y **euskera**.
+## Description
+EuEsSwitch-Dataset is a synthetic audio dataset designed for research in **automatic speech recognition (ASR)** with **code-switching** between **Spanish (Castilian)** and **Basque (Euskera)**.
 
-El dataset incluye tanto **segmentos monolingües** como **combinaciones bilingües**, lo que permite experimentar con:
-- ASR con code-switching
-- detección de idioma
-- segmentación de audio
-- modelos multilingües
+The dataset includes both **monolingual segments** and **bilingual combinations**, enabling experimentation with:
+- code-switching ASR
+- language identification
+- audio segmentation
+- multilingual models
 
 ---
 
-## Estructura del dataset
+## Dataset Structure
 
-El dataset se organiza en las siguientes carpetas:
+The dataset is organized into the following folders:
 
 ### `plainEu`
-- 50 segmentos de audio generados en **euskera**
-- Duración: **4–7 segundos**
+- 50 audio segments generated in **Basque**
+- Duration: **4–7 seconds**
 
 ### `plainEs`
-- 50 segmentos de audio generados en **castellano**
-- Duración: **4–7 segundos**
+- 50 audio segments generated in **Spanish**
+- Duration: **4–7 seconds**
 
 ### `2secCombos`
-- 2500 audios
-- Cada audio combina **2 segmentos**
-- Los segmentos provienen de `plainEu` y `plainEs`
-- Contienen combinaciones bilingües euskera–español
+- 2500 audio files
+- Each audio combines **2 segments**
+- The segments come from `plainEu` and `plainEs`
+- They contain bilingual Basque–Spanish combinations
 
 ### `3secCombos`
-- 1000 audios
-- Cada audio combina **3 segmentos**
-- Los segmentos provienen de `plainEu` y `plainEs`
-- Se garantiza que:
-  - no todos los segmentos son del mismo idioma
-  - el patrón de idiomas varía entre audios
+- 1000 audio files
+- Each audio combines **3 segments**
+- The segments come from `plainEu` and `plainEs`
+- It is guaranteed that:
+  - not all segments are in the same language
+  - the language pattern varies across files
 
 ### `4secCombos`
-- 500 audios
-- Cada audio combina **4 segmentos**
-- Los segmentos provienen de `plainEu` y `plainEs`
-- Se garantiza que:
-  - no todos los segmentos son del mismo idioma
-  - el patrón de idiomas varía entre audios
+- 500 audio files
+- Each audio combines **4 segments**
+- The segments come from `plainEu` and `plainEs`
+- It is guaranteed that:
+  - not all segments are in the same language
+  - the language pattern varies across files
 
 ---
 
-## Propósito
-Este dataset ha sido creado para facilitar experimentos en habla bilingüe y code-switching, especialmente en sistemas ASR español–euskera.
+## Purpose
+This dataset was created to facilitate experiments in bilingual speech and code-switching, especially for Spanish–Basque ASR systems.
 
-Puede utilizarse para:
-- entrenamiento y evaluación de modelos ASR con mezcla de idiomas
-- detección automática de idioma en audio
-- análisis de transiciones entre euskera y castellano
-- benchmarking de modelos multilingües como Whisper
-
----
-
-## Estrategia de composición
-El dataset sigue una estructura de complejidad progresiva:
-
-- **Segmentos base monolingües**: `plainEu`, `plainEs`
-- **Combinaciones de 2 segmentos**: escenarios simples
-- **Combinaciones de 3 segmentos**: mayor variabilidad
-- **Combinaciones de 4 segmentos**: secuencias más complejas
-
-Esto permite analizar cómo se comportan los modelos ante distintos niveles de code-switching.
+It can be used for:
+- training and evaluation of ASR models with mixed languages
+- automatic language identification in audio
+- analysis of transitions between Basque and Spanish
+- benchmarking multilingual models such as Whisper
 
 ---
 
-## Notas
-- Este es un **dataset sintético**, generado a partir de segmentos de audio.
-- Los audios combinados se construyen mediante concatenación de segmentos.
-- Está orientado a investigación en procesamiento de habla multilingüe.
+## Composition Strategy
+The dataset follows a progressively increasing complexity structure:
+
+- **Base monolingual segments**: `plainEu`, `plainEs`
+- **2-segment combinations**: simple scenarios
+- **3-segment combinations**: greater variability
+- **4-segment combinations**: more complex sequences
+
+This makes it possible to analyze how models behave under different levels of code-switching.
 
 ---
 
-## Autor
+## Notes
+- This is a **synthetic dataset**, generated from audio segments.
+- The combined audio files are built by concatenating segments.
+- It is intended for research in multilingual speech processing.
+
+---
+
+## Author
 **Javier Ramírez Zarzoso**  
 GitHub: https://github.com/javier-rmrz
 
 ---
 
-## Cita
-Si utilizas este dataset, por favor cítalo como:
+## Citation
+If you use this dataset, please cite it as:
 
 ```bibtex
 @dataset{ramirezzarzoso2026euesswitch,
-  title     = {EuEsSwitch-Dataset: Corpus de voz con code-switching Español–Euskera},
+  title     = {EuEsSwitch-Dataset: Spanish–Basque Code-Switching Speech Corpus},
   author    = {Javier Ramírez Zarzoso},
   year      = {2026}
 }
